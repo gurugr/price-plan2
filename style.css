@@ -1,0 +1,99 @@
+/* Basic
+background: rgb(242, 159, 195);
+background: radial-gradient(circle, rgba(242, 159, 195, 1) 0%, rgba(152, 175, 203, 1) 100%);
+Standard
+background: rgb(0, 22, 36);
+background: linear-gradient(90deg, rgba(0, 22, 36, 1) 0%, rgba(255, 0, 249, 1) 52%, rgba(9, 9, 121, 1) 100%);
+Premium
+ */
+
+
+
+.pricing-container{
+    display:flex;
+    gap:6rem;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    /* height:60vh; */
+    
+}
+.basic {
+    background: rgb(86, 86, 84);
+    background: linear-gradient(90deg, rgba(86, 86, 84, 1) 0%, rgba(238, 255, 15, 1) 58%, rgba(84, 85, 81, 1) 100%);
+}
+.standard{
+    background: rgb(0, 22, 36);
+    background: linear-gradient(90deg, rgba(0, 22, 36, 1) 0%, rgba(0, 249, 91, 1) 52%, rgba(9, 9, 121, 1) 100%);
+}
+.premium{
+    background: rgb(0, 22, 36);
+    background: linear-gradient(90deg, rgba(0, 22, 36, 1) 0%, rgba(255, 0, 249, 1) 52%, rgba(9, 9, 121, 1) 100%);
+}
+.plan-title{
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top: thin solid rgb(208, 204, 204);
+}
+.pricing-plan{
+    min-width: 300px;
+    text-align: center;
+    border-bottom: thin solid rgb(208, 204, 204);;
+    border-left:thin solid rgb(208, 204, 204);;
+    border-right: thin solid rgb(208, 204, 204);;
+    border-radius: 10px;
+    padding-bottom:50px ;
+    background-color: aliceblue;
+}
+.plan-title, .plan-price{
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-style:normal;
+}
+.plan-price {
+    padding: 40px 0px;
+    font-size: 3rem;
+}
+.plan-price > span{
+    font-size: 1rem;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.plan-features{
+    text-align: left;
+    font-family: 'Edu TAS Beginner',cursive;
+    font-weight:bolder;
+    font-size: 1.5rem;
+    list-style: none;
+    padding-bottom: 20px;
+}
+.plan-features li{
+    padding: 5px 10px;
+}
+.plan-button{
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: large;
+    color: rgb(7, 6, 6);
+}
+.plan-button:hover{
+    color: red;
+}
+
+@media (max-width:550px) {
+    .pricing-container{
+        margin-top: 100px;
+    }
+}
+@media (min-width:551px) and (max-width:950px) {
+    .pricing-container{
+        margin-top: 200px;
+    }
+}
+@media (min-width:951px) {
+    .pricing-container{
+        padding-top: 300px;
+      
+    }
+}
